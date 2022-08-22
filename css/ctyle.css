@@ -1,0 +1,145 @@
+@keyframes click {
+  0% {
+    background-color: white;
+    box-shadow: 0 0 10px 10px #ffffff;
+  }
+  100% {
+    background-color: transparent;
+    box-shadow: 0 0 0 0 #ffffff;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Merriweather", sant-sefir;
+  background: linear-gradient(#e7694a, #1e77fd);
+  transition: 1s;
+}
+
+.window {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.area {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px solid #ffffff;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #ffffff;
+  transition: all 0.5s;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  box-shadow: inset 0 0 15px 10px #cabebe;
+  color: white;
+}
+
+h1,
+h2 {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+button {
+  display: block;
+  margin: auto;
+  margin-bottom: 35px;
+  font-family: "Merriweather", sant-sefir;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 4px solid #034f96;
+  background: linear-gradient(
+    90deg,
+    rgb(35, 32, 219),
+    rgb(128, 138, 235),
+    rgb(35, 32, 219)
+  );
+  transition: 0.5s;
+}
+
+button:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+
+.container img {
+  height: 50px;
+}
+
+.container a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.win {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+
+.table {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #000000;
+  text-align: center;
+  background-color: #ffffff;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.win-go {
+  top: 0;
+  transition: 1s;
+}
+
+.close {
+  display: block;
+  margin: 0 auto;
+}
+
+.back {
+  background: linear-gradient(#8f412d, #11428d);
+  transition: 1s;
+}
+
+.click {
+  animation: click;
+  animation-duration: 0.5s;
+}
